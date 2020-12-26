@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mobile Code</title>
-    <link>https://mobilecode.dev/</link>
-    <description>Recent content on Mobile Code</description>
+    <title>Dart Int on Mobile Code</title>
+    <link>https://mobilecode.dev/tag/dart-int/</link>
+    <description>Recent content in Dart Int on Mobile Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Dec 2020 23:20:05 +0700</lastBuildDate>
     
-	<atom:link href="https://mobilecode.dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mobilecode.dev/tag/dart-int/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,18 +19,6 @@
       <guid>https://mobilecode.dev/dart-int-data-type/</guid>
       <description>In this tutorial, we learn how to use int data type in a Dart program.
 How to define int variable void main() { int number1 = 10; int number2 = 20; int addResult = number1 + number2; int subtractResult = number2 - number1; int multiplyResult = number1 * number2; double divisionResult = number2 / number1; int moduloResult = number2 % number1; print(&amp;#34;10 * 20 = &amp;#34; + addResult.toString()); print(&amp;#34;20 -10 = &amp;#34; + subtractResult.</description>
-    </item>
-    
-    <item>
-      <title>Implement Hello World Program in Dart Programming Language</title>
-      <link>https://mobilecode.dev/dart-hello-world/</link>
-      <pubDate>Sat, 26 Dec 2020 12:43:07 +0700</pubDate>
-      
-      <guid>https://mobilecode.dev/dart-hello-world/</guid>
-      <description>In this tutorial, we are going to learn step by step to create the first hello world program in Dart programming language.
-Step 1 - Create Dart source code file Create a new file named helloworld.dart on your disk, the .dart file extension is specified for Dart source code files.
-For example, we create new file at D:\Dart\helloworld.dart
-Step 2 - Implement Hello World Application in Dart The Dart program entry point is the main() method so that we need to implement the main() method in our program.</description>
     </item>
     
   </channel>
