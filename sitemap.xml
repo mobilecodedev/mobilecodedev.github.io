@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mobilecode.dev/dart-hello-world/</loc>
+    <lastmod>2020-12-26T12:43:07+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mobilecode.dev/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://mobilecode.dev/tag/dart/</loc>
+    <lastmod>2020-12-26T12:43:07+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mobilecode.dev/dart/</loc>
+    <lastmod>2020-12-26T12:43:07+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mobilecode.dev/dart-tutorials/</loc>
+    <lastmod>2020-12-26T12:43:07+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mobilecode.dev/</loc>
+    <lastmod>2020-12-26T12:43:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mobilecode.dev/tags/</loc>
+    <lastmod>2020-12-26T12:43:07+07:00</lastmod>
     <priority>0</priority>
   </url>
   

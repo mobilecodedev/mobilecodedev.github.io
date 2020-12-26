@@ -10,5 +10,14 @@
 	<atom:link href="https://mobilecode.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Dart</title>
+      <link>https://mobilecode.dev/dart/</link>
+      <pubDate>Sat, 26 Dec 2020 12:43:07 +0700</pubDate>
+      
+      <guid>https://mobilecode.dev/dart/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
