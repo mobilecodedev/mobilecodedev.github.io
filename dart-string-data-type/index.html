@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dart String Data Type by Examples</title>
+    <meta name="title" content="Dart String Data Type by Examples">
+    <meta name="description" content="In this Dart tutorial, we learn how to use String in Dart programming language via different example Dart programs.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mobilecode.dev/dart-string-data-type/">
+    <meta property="og:title" content="Dart String Data Type by Examples">
+    <meta property="og:description" content="In this Dart tutorial, we learn how to use String in Dart programming language via different example Dart programs.">
+    
+    <meta property="og:image" content="https://mobilecode.dev/images/dart-string-data-type.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://mobilecode.dev/dart-string-data-type/">
+    <meta name="twitter:title" content="Dart String Data Type by Examples">
+    <meta name="twitter:description" content="In this Dart tutorial, we learn how to use String in Dart programming language via different example Dart programs.">
+    
+    <meta name="twitter:image" content="https://mobilecode.dev/images/dart-string-data-type.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://mobilecode.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://mobilecode.dev/">
+      <img src="https://mobilecode.dev/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://mobilecode.dev//dart">Dart</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Dart String Data Type by Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Dart tutorial, we learn how to use String in Dart programming language via different example Dart programs.</p>
+
+<h4 id="how-to-declare-string-variables-in-dart">How to declare String variables in Dart</h4>
+
+<p>Declare single line String with single quotes or double quotes.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello MobileCode.Dev&#34;</span>;
+  <span style="color:#66d9ef">String</span> str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hello MobileCode.Dev&#39;</span>;
+  <span style="color:#66d9ef">String</span> str3 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello &#39;MobileCode.Dev&#39;&#34;</span>;
+  <span style="color:#66d9ef">String</span> str4 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hello &#34;MobileCode.Dev&#34;&#39;</span>;
+
+  print(str1);
+  print(str2);
+  print(str3);
+  print(str4);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello MobileCode.Dev
+Hello MobileCode.Dev
+Hello &#39;MobileCode.Dev&#39;
+Hello &#34;MobileCode.Dev&#34;</code></pre></div></p>
+
+<h4 id="declare-multi-lines-string-triple-quotes">Declare multi lines String triple quotes.</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34; This is
+</span><span style="color:#e6db74">  a 
+</span><span style="color:#e6db74">  multi lines 
+</span><span style="color:#e6db74">  String in Dart
+</span><span style="color:#e6db74">  &#34;&#34;&#34;</span>;
+
+  <span style="color:#66d9ef">String</span> str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="color:#e6db74">  Hello
+</span><span style="color:#e6db74">  MobileCode.Dev
+</span><span style="color:#e6db74">  &#39;&#39;&#39;</span>;
+
+  print(str1);
+  print(str2);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"> This is
+  a
+  multi lines
+  String in Dart
+
+  Hello
+  MobileCode.Dev</code></pre></div></p>
+
+<h4 id="how-to-concatenate-strings-in-dart">How to concatenate Strings in Dart</h4>
+
+<p>Use plus ( + ) operator to concatenate Strings.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;MobileCode.Dev&#34;</span>;
+  
+  print(str);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello, MobileCode.Dev</code></pre></div></p>
+
+<p>Use adjacent string literals to concatenate Strings in Dart.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#e6db74">&#34; MobileCode.DEV&#34;</span>;
+
+  print(str);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello,  MobileCode.DEV</code></pre></div></p>
+
+<p>Use * operator to concatenate String multiple times.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;test &#34;</span>;
+  
+  print(str <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">test test test test test</code></pre></div></p>
+
+<h4 id="string-interpolation-in-dart">String interpolation in Dart</h4>
+
+<p>In Dart programming language, we can use ${} to interpolate the value of Dart expressions within Strings.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> price <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.5</span>;
+  <span style="color:#66d9ef">String</span> productName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Product Name&#34;</span>;
+  <span style="color:#66d9ef">String</span> message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;The </span><span style="color:#e6db74">${</span>productName<span style="color:#e6db74">}</span><span style="color:#e6db74"> price is </span><span style="color:#e6db74">${</span>price<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>;
+
+  print(message);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">The Product Name price is 10.5</code></pre></div></p>
+
+<h4 id="check-the-string-value-is-empty-or-not">Check the String value is empty or not</h4>
+
+<p>Using isEmpty property
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+  <span style="color:#66d9ef">if</span>(str.isEmpty) {
+    print(<span style="color:#e6db74">&#39;String is empty&#39;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#39;String is not empty&#39;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">String is empty</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+  <span style="color:#66d9ef">if</span>(str.isEmpty) {
+    print(<span style="color:#e6db74">&#39;String is empty&#39;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#39;String is not empty&#39;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">String is not empty</code></pre></div></p>
+
+<p>Using isNotEmpty property
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+  <span style="color:#66d9ef">if</span>(str.isNotEmpty) {
+    print(<span style="color:#e6db74">&#39;String is not empty&#39;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#39;String is empty&#39;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">String is empty</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+  <span style="color:#66d9ef">if</span>(str.isNotEmpty) {
+    print(<span style="color:#e6db74">&#39;String is not empty&#39;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#39;String is empty&#39;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">String is not empty</code></pre></div></p>
+
+<h4 id="get-length-of-a-string">Get length of a String</h4>
+
+<p>String class provides length property to get the length of a String.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+
+  print(str.length);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">14</code></pre></div></p>
+
+<h4 id="check-if-a-string-end-with-a-given-string-using-endswith-method">Check if a String end with a given String using endsWith() method</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+
+  print(str.endsWith(<span style="color:#e6db74">&#34;dev&#34;</span>));
+  print(str.endsWith(<span style="color:#e6db74">&#34;code&#34;</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">true
+false</code></pre></div></p>
+
+<h4 id="get-a-substring-with-given-indexes-using-substring-method">Get a subString with given indexes using substring() method</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;mobilecode.dev&#39;</span>;
+
+  print(str.substring(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">mobilecode</code></pre></div></p>
+
+<h4 id="convert-all-characters-in-a-string-to-lower-cases-using-tolowercase-method">Convert all characters in a String to lower cases using toLowerCase() method</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;MOBILECode.Dev&#34;</span>;
+
+  print(str.toLowerCase());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">mobilecode.dev</code></pre></div></p>
+
+<h4 id="convert-all-characters-in-a-string-to-upper-cases-using-touppercase-method">Convert all characters in a String to upper cases using toUpperCase() method</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+
+  print(str.toUpperCase());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">MOBILECODE.DEV</code></pre></div></p>
+
+<h4 id="get-the-list-of-the-utf-16-code-units-of-a-string">Get the list of the UTF-16 code units of a String</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+  
+  print(str.codeUnits);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[109, 111, 98, 105, 108, 101, 99, 111, 100, 101, 46, 100, 101, 118]</code></pre></div></p>
+
+<h4 id="get-unicode-code-points-of-a-string-using-runes-property">Get Unicode code-points of a String using runes property</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;xin chào&#34;</span>;
+  <span style="color:#66d9ef">String</span> str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;こんにちは&#34;</span>;
+
+  print(str1.runes);
+  print(str2.runes);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">(120, 105, 110, 32, 99, 104, 224, 111)
+(12371, 12435, 12395, 12385, 12399)</code></pre></div></p>
+
+<h4 id="get-code-unit-at-a-given-index-using-codeunitat-method">Get code unit at a given index using codeUnitAt() method</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+
+  print(str.codeUnitAt(<span style="color:#ae81ff">5</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">101</code></pre></div></p>
+
+<h4 id="compare-two-string-using-compareto-method">Compare two String using compareTo() method</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a&#34;</span>;
+  
+  print(str1.compareTo(<span style="color:#e6db74">&#34;A&#34;</span>));
+  print(str1.compareTo(<span style="color:#e6db74">&#34;z&#34;</span>));
+  print(str1.compareTo(<span style="color:#e6db74">&#34;a&#34;</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">1
+-1
+0</code></pre></div></p>
+
+<h4 id="how-to-use-trim-method">How to use trim() method</h4>
+
+<p>The trim() method to get a new String without any leading and trailing whitespace.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;  Dart    Tutorial  &#34;</span>;
+
+  print(str.trim());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Dart    Tutorial</code></pre></div></p>
+
+<h4 id="how-to-use-trimleft-method">How to use trimLeft() method</h4>
+
+<p>The trimLeft() method to get a new String without any leading whitespace.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;  Dart    Tutorial  &#34;</span>;
+
+  print(str.trimLeft());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Dart    Tutorial</code></pre></div></p>
+
+<h4 id="how-to-use-trimright-method">How to use trimRight() method</h4>
+
+<p>The trimRight() method to get a new String without any trailing whitespace.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">String</span> str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;  Dart    Tutorial  &#34;</span>;
+
+  print(str.trimRight());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">  Dart    Tutorial</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://mobilecode.dev/dart-int-data-type/">Dart integer Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-double-data-type/">Dart double Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-bool-data-type/">Dart bool Data Type by Examples</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://mobilecode.dev/tag/dart-string">Dart String</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">   
+            <div class="container-fluid">
+                <p class="copyright">Copyright &#xA9; 2019 MobileCode.dev All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://mobilecode.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://mobilecode.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6MNFJLDKNE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6MNFJLDKNE');
+</script>
+</body>
+</html>

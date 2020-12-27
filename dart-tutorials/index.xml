@@ -6,10 +6,20 @@
     <description>Recent content in Dart-tutorials on Mobile Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 16:06:23 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Dec 2020 22:32:13 +0700</lastBuildDate>
     
 	<atom:link href="https://mobilecode.dev/dart-tutorials/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dart String Data Type by Examples</title>
+      <link>https://mobilecode.dev/dart-string-data-type/</link>
+      <pubDate>Sun, 27 Dec 2020 22:32:13 +0700</pubDate>
+      
+      <guid>https://mobilecode.dev/dart-string-data-type/</guid>
+      <description>In this Dart tutorial, we learn how to use String in Dart programming language via different example Dart programs.
+How to declare String variables in Dart Declare single line String with single quotes or double quotes. void main() { String str1 = &amp;#34;Hello MobileCode.Dev&amp;#34;; String str2 = &amp;#39;Hello MobileCode.Dev&amp;#39;; String str3 = &amp;#34;Hello &amp;#39;MobileCode.Dev&amp;#39;&amp;#34;; String str4 = &amp;#39;Hello &amp;#34;MobileCode.Dev&amp;#34;&amp;#39;; print(str1); print(str2); print(str3); print(str4); } The output is: Hello MobileCode.Dev Hello MobileCode.</description>
+    </item>
     
     <item>
       <title>Dart bool Data Type by Examples</title>
