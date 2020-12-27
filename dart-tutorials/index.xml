@@ -6,10 +6,21 @@
     <description>Recent content in Dart-tutorials on Mobile Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 14:53:54 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Dec 2020 16:06:23 +0700</lastBuildDate>
     
 	<atom:link href="https://mobilecode.dev/dart-tutorials/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dart bool Data Type by Examples</title>
+      <link>https://mobilecode.dev/dart-bool-data-type/</link>
+      <pubDate>Sun, 27 Dec 2020 16:06:23 +0700</pubDate>
+      
+      <guid>https://mobilecode.dev/dart-bool-data-type/</guid>
+      <description>In this tutorial, we learn how to use bool data type in Dart programming language.
+How to declare a bool variable in Dart Declare true value. void main() { bool value = true; if(value) { print(&amp;#34;value is true&amp;#34;); } else { print(&amp;#34;value is false&amp;#34;); } } The output is: value is true
+Declare false value. void main() { bool value = false; if(value) { print(&amp;#34;value is true&amp;#34;); } else { print(&amp;#34;value is false&amp;#34;); } } The output is: value is false</description>
+    </item>
     
     <item>
       <title>Dart double Data Type by Examples</title>

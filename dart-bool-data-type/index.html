@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dart bool Data Type by Examples</title>
+    <meta name="title" content="Dart bool Data Type by Examples">
+    <meta name="description" content="In this tutorial, we learn how to use bool data type in Dart programming language.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mobilecode.dev/dart-bool-data-type/">
+    <meta property="og:title" content="Dart bool Data Type by Examples">
+    <meta property="og:description" content="In this tutorial, we learn how to use bool data type in Dart programming language.">
+    
+    <meta property="og:image" content="https://mobilecode.dev/images/dart-bool-data-type.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://mobilecode.dev/dart-bool-data-type/">
+    <meta name="twitter:title" content="Dart bool Data Type by Examples">
+    <meta name="twitter:description" content="In this tutorial, we learn how to use bool data type in Dart programming language.">
+    
+    <meta name="twitter:image" content="https://mobilecode.dev/images/dart-bool-data-type.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://mobilecode.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://mobilecode.dev/">
+      <img src="https://mobilecode.dev/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://mobilecode.dev//dart">Dart</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Dart bool Data Type by Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this tutorial, we learn how to use bool data type in Dart programming language.</p>
+
+<h4 id="how-to-declare-a-bool-variable-in-dart">How to declare a bool variable in Dart</h4>
+
+<p>Declare true value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">bool</span> value <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+  
+  <span style="color:#66d9ef">if</span>(value) {
+    print(<span style="color:#e6db74">&#34;value is true&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;value is false&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">value is true</code></pre></div></p>
+
+<p>Declare false value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">bool</span> value <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+  
+  <span style="color:#66d9ef">if</span>(value) {
+    print(<span style="color:#e6db74">&#34;value is true&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;value is false&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">value is false</code></pre></div></p>
+
+<h4 id="convert-bool-value-into-string-in-dart">Convert bool value into String in Dart</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">bool</span> value1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+  <span style="color:#66d9ef">bool</span> value2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+
+  print(value1.toString());
+  print(value2.toString());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">true
+false</code></pre></div></p>
+
+<h4 id="basic-operators-with-bool-in-dart">Basic operators with bool in Dart</h4>
+
+<p>The and ( &amp; )operator.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">false</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">false result</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">true</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">true result</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">false</span> <span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">false</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">false result</code></pre></div></p>
+
+<p>The exclusive or ( ^ ) operator.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">true</span><span style="color:#f92672">^</span><span style="color:#66d9ef">false</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">true result</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">true</span><span style="color:#f92672">^</span><span style="color:#66d9ef">true</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">false result</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">false</span><span style="color:#f92672">^</span><span style="color:#66d9ef">false</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">false result</code></pre></div></p>
+
+<p>The inclusive or ( | ) operator.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">true</span><span style="color:#f92672">|</span><span style="color:#66d9ef">false</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">true result</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">true</span><span style="color:#f92672">|</span><span style="color:#66d9ef">true</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">true result</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">if</span>(<span style="color:#66d9ef">false</span><span style="color:#f92672">|</span><span style="color:#66d9ef">false</span>) {
+    print(<span style="color:#e6db74">&#34;true result&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;false result&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">false result</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://mobilecode.dev/dart-int-data-type/">Dart integer Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-double-data-type/">Dart double Data Type by Examples</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://mobilecode.dev/tag/dart-bool">Dart bool</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">   
+            <div class="container-fluid">
+                <p class="copyright">Copyright &#xA9; 2019 MobileCode.dev All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://mobilecode.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://mobilecode.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6MNFJLDKNE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6MNFJLDKNE');
+</script>
+</body>
+</html>
