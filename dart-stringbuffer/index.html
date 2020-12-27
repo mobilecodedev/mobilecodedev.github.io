@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dart StringBuffer by Examples</title>
+    <meta name="title" content="Dart StringBuffer by Examples">
+    <meta name="description" content="In this Dart tutorial, we learn how to use StringBuffer class, a class for concatenating strings efficiently in Dart programming language.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mobilecode.dev/dart-stringbuffer/">
+    <meta property="og:title" content="Dart StringBuffer by Examples">
+    <meta property="og:description" content="In this Dart tutorial, we learn how to use StringBuffer class, a class for concatenating strings efficiently in Dart programming language.">
+    
+    <meta property="og:image" content="https://mobilecode.dev/images/dart-stringbuffer.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://mobilecode.dev/dart-stringbuffer/">
+    <meta name="twitter:title" content="Dart StringBuffer by Examples">
+    <meta name="twitter:description" content="In this Dart tutorial, we learn how to use StringBuffer class, a class for concatenating strings efficiently in Dart programming language.">
+    
+    <meta name="twitter:image" content="https://mobilecode.dev/images/dart-stringbuffer.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://mobilecode.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://mobilecode.dev/">
+      <img src="https://mobilecode.dev/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://mobilecode.dev//dart">Dart</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Dart StringBuffer by Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Dart tutorial, we learn how to use <strong>StringBuffer</strong> class, a class for concatenating strings efficiently in Dart programming language.</p>
+
+<h4 id="how-to-use-stringbuffer-class-to-build-a-string">How to use StringBuffer class to build a String</h4>
+
+<p>In the following example Dart program we use StringBuffer to build a String by using <strong>write()</strong> method to add String content and then use <strong>toString()</strong> method to get the final String.</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  StringBuffer stringBuffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer();
+  stringBuffer.write(<span style="color:#e6db74">&#34;Hello, &#34;</span>);
+  stringBuffer.write(<span style="color:#e6db74">&#34;Mobile&#34;</span>);
+  stringBuffer.write(<span style="color:#e6db74">&#34;Code&#34;</span>);
+  stringBuffer.write(<span style="color:#e6db74">&#34;.Dev&#34;</span>);
+
+  print(stringBuffer.toString());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello, MobileCode.Dev</code></pre></div></p>
+
+<p>The <strong>writeln()</strong> method to write a line of String value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  StringBuffer stringBuffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer();
+  stringBuffer.writeln(<span style="color:#e6db74">&#34;Hello, &#34;</span>);
+  stringBuffer.writeln(<span style="color:#e6db74">&#34;Mobile&#34;</span>);
+  stringBuffer.writeln(<span style="color:#e6db74">&#34;Code&#34;</span>);
+  stringBuffer.writeln(<span style="color:#e6db74">&#34;.Dev&#34;</span>);
+
+  print(stringBuffer.toString());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Hello,
+Mobile
+Code
+.Dev</code></pre></div></p>
+
+<p>The <strong>clear()</strong> method to clear StringBuffer content.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  StringBuffer stringBuffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer();
+  stringBuffer.write(<span style="color:#e6db74">&#34;First &#34;</span>);
+  stringBuffer.write(<span style="color:#e6db74">&#34;String&#34;</span>);
+  
+  print(stringBuffer.toString());
+  stringBuffer.clear();
+
+  stringBuffer.write(<span style="color:#e6db74">&#34;Second &#34;</span>);
+  stringBuffer.write(<span style="color:#e6db74">&#34;String&#34;</span>);
+  
+  print(stringBuffer.toString());
+  stringBuffer.clear();
+
+  stringBuffer.write(<span style="color:#e6db74">&#34;Third &#34;</span>);
+  stringBuffer.write(<span style="color:#e6db74">&#34;String&#34;</span>);
+  
+  print(stringBuffer.toString());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">First String
+Second String
+Third String</code></pre></div></p>
+
+<h4 id="check-a-stringbuffer-is-empty-or-not">Check a StringBuffer is empty or not</h4>
+
+<p>Using <strong>isEmpty</strong> property.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  StringBuffer stringBuffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer();
+  
+  <span style="color:#66d9ef">if</span>(stringBuffer.isEmpty) {
+    print(<span style="color:#e6db74">&#34;StringBuffer is empty&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;StringBuffer is not empty&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">StringBuffer is empty</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  StringBuffer stringBuffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer(<span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>);
+  
+  <span style="color:#66d9ef">if</span>(stringBuffer.isEmpty) {
+    print(<span style="color:#e6db74">&#34;StringBuffer is empty&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;StringBuffer is not empty&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">StringBuffer is not empty</code></pre></div></p>
+
+<p>Using <strong>isNotEmpty</strong> property.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  StringBuffer stringBuffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer();
+  
+  <span style="color:#66d9ef">if</span>(stringBuffer.isNotEmpty) {
+    print(<span style="color:#e6db74">&#34;StringBuffer is not empty&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;StringBuffer is empty&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">StringBuffer is empty</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  StringBuffer stringBuffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuffer(<span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>);
+  
+  <span style="color:#66d9ef">if</span>(stringBuffer.isNotEmpty) {
+    print(<span style="color:#e6db74">&#34;StringBuffer is not empty&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;StringBuffer is empty&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">StringBuffer is not empty</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://mobilecode.dev/dart-string-data-type/">Dart String Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-int-data-type/">Dart integer Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-double-data-type/">Dart double Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-bool-data-type/">Dart bool Data Type by Examples</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://mobilecode.dev/tag/dart-stringbuffer">Dart StringBuffer</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">   
+            <div class="container-fluid">
+                <p class="copyright">Copyright &#xA9; 2019 MobileCode.dev All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://mobilecode.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://mobilecode.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6MNFJLDKNE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6MNFJLDKNE');
+</script>
+</body>
+</html>

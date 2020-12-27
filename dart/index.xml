@@ -6,10 +6,21 @@
     <description>Recent content in Dart on Mobile Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 22:32:13 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 28 Dec 2020 00:28:19 +0700</lastBuildDate>
     
 	<atom:link href="https://mobilecode.dev/dart/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dart StringBuffer by Examples</title>
+      <link>https://mobilecode.dev/dart-stringbuffer/</link>
+      <pubDate>Mon, 28 Dec 2020 00:28:19 +0700</pubDate>
+      
+      <guid>https://mobilecode.dev/dart-stringbuffer/</guid>
+      <description>In this Dart tutorial, we learn how to use StringBuffer class, a class for concatenating strings efficiently in Dart programming language.
+How to use StringBuffer class to build a String In the following example Dart program we use StringBuffer to build a String by using write() method to add String content and then use toString() method to get the final String.
+void main() { StringBuffer stringBuffer = new StringBuffer(); stringBuffer.</description>
+    </item>
     
     <item>
       <title>Dart String Data Type by Examples</title>
