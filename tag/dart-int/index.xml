@@ -18,7 +18,7 @@
       
       <guid>https://mobilecode.dev/dart-int-data-type/</guid>
       <description>In this tutorial, we learn how to use int data type in a Dart program.
-How to define int variable void main() { int number1 = 10; int number2 = 20; int addResult = number1 + number2; int subtractResult = number2 - number1; int multiplyResult = number1 * number2; double divisionResult = number2 / number1; int moduloResult = number2 % number1; print(&amp;#34;10 * 20 = &amp;#34; + addResult.toString()); print(&amp;#34;20 -10 = &amp;#34; + subtractResult.</description>
+How to define int variable and basic operator in Dart void main() { int number1 = 10; int number2 = 20; int addResult = number1 + number2; int subtractResult = number2 - number1; int multiplyResult = number1 * number2; double divisionResult = number2 / number1; int moduloResult = number2 % number1; print(&amp;#34;10 * 20 = &amp;#34; + addResult.</description>
     </item>
     
   </channel>

@@ -6,10 +6,20 @@
     <description>Recent content in Dart-tutorials on Mobile Code</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Dec 2020 23:20:05 +0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Dec 2020 14:53:54 +0700</lastBuildDate>
     
 	<atom:link href="https://mobilecode.dev/dart-tutorials/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dart double Data Type by Examples</title>
+      <link>https://mobilecode.dev/dart-double-data-type/</link>
+      <pubDate>Sun, 27 Dec 2020 14:53:54 +0700</pubDate>
+      
+      <guid>https://mobilecode.dev/dart-double-data-type/</guid>
+      <description>In this tutorial, we learn how to use double-precision floating point number data type in Dart programming language.
+How to declare double variables and basic operators in Dart void main() { double number1 = 10.5; double number2 = 5.5; double addResult = number1 + number2; double subtractResult = number1 - number2; double multuplyResult = number1 * number2; double divisionResult = number1 / number2; double moduloResult = number1 % number2; print(&amp;#34;10.</description>
+    </item>
     
     <item>
       <title>Dart integer Data Type by Examples</title>
@@ -18,7 +28,7 @@
       
       <guid>https://mobilecode.dev/dart-int-data-type/</guid>
       <description>In this tutorial, we learn how to use int data type in a Dart program.
-How to define int variable void main() { int number1 = 10; int number2 = 20; int addResult = number1 + number2; int subtractResult = number2 - number1; int multiplyResult = number1 * number2; double divisionResult = number2 / number1; int moduloResult = number2 % number1; print(&amp;#34;10 * 20 = &amp;#34; + addResult.toString()); print(&amp;#34;20 -10 = &amp;#34; + subtractResult.</description>
+How to define int variable and basic operator in Dart void main() { int number1 = 10; int number2 = 20; int addResult = number1 + number2; int subtractResult = number2 - number1; int multiplyResult = number1 * number2; double divisionResult = number2 / number1; int moduloResult = number2 % number1; print(&amp;#34;10 * 20 = &amp;#34; + addResult.</description>
     </item>
     
     <item>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dart double Data Type by Examples</title>
+    <meta name="title" content="Dart double Data Type by Examples">
+    <meta name="description" content="In this tutorial, we learn how to use double precision floating point number data type in Dart programming language.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mobilecode.dev/dart-double-data-type/">
+    <meta property="og:title" content="Dart double Data Type by Examples">
+    <meta property="og:description" content="In this tutorial, we learn how to use double-precision floating point number data type in Dart programming language.">
+    
+    <meta property="og:image" content="https://mobilecode.dev/images/dart-double-data-type.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://mobilecode.dev/dart-double-data-type/">
+    <meta name="twitter:title" content="Dart double Data Type by Examples">
+    <meta name="twitter:description" content="In this tutorial, we learn how to use double-precision floating point number data type in Dart programming language.">
+    
+    <meta name="twitter:image" content="https://mobilecode.dev/images/dart-double-data-type.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://mobilecode.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://mobilecode.dev/">
+      <img src="https://mobilecode.dev/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://mobilecode.dev//dart">Dart</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Dart double Data Type by Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this tutorial, we learn how to use double-precision floating point number data type in Dart programming language.</p>
+
+<h4 id="how-to-declare-double-variables-and-basic-operators-in-dart">How to declare double variables and basic operators in Dart</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+
+  <span style="color:#66d9ef">double</span> addResult <span style="color:#f92672">=</span> number1 <span style="color:#f92672">+</span> number2;
+  <span style="color:#66d9ef">double</span> subtractResult <span style="color:#f92672">=</span> number1 <span style="color:#f92672">-</span> number2;
+  <span style="color:#66d9ef">double</span> multuplyResult <span style="color:#f92672">=</span> number1 <span style="color:#f92672">*</span> number2;
+  <span style="color:#66d9ef">double</span> divisionResult <span style="color:#f92672">=</span> number1 <span style="color:#f92672">/</span> number2;
+  <span style="color:#66d9ef">double</span> moduloResult <span style="color:#f92672">=</span> number1 <span style="color:#f92672">%</span> number2;
+
+  print(<span style="color:#e6db74">&#34;10.5 + 5.5 = &#34;</span> <span style="color:#f92672">+</span> addResult.toString());
+  print(<span style="color:#e6db74">&#34;10.5 - 5.5 = &#34;</span> <span style="color:#f92672">+</span> subtractResult.toString());
+  print(<span style="color:#e6db74">&#34;10.5 * 5.5 = &#34;</span> <span style="color:#f92672">+</span> multuplyResult.toString());
+  print(<span style="color:#e6db74">&#34;10.5 / 5.5 = &#34;</span> <span style="color:#f92672">+</span> divisionResult.toString());
+  print(<span style="color:#e6db74">&#34;10.5 % 5.5 = &#34;</span> <span style="color:#f92672">+</span> moduloResult.toString());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">10.5 + 5.5 = 16.0
+10.5 - 5.5 = 5.0
+10.5 * 5.5 = 57.75
+10.5 / 5.5 = 1.9090909090909092
+10.5 % 5.5 = 5.0</code></pre></div></p>
+
+<h4 id="check-a-double-value-is-negative-or-not-using-isnegative-property">Check a double value is negative or not using isNegative property</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">10.0</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">0.0</span>;
+  <span style="color:#66d9ef">double</span> number3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.0</span>;
+  <span style="color:#66d9ef">double</span> number4 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.0</span>;
+
+  print(number1.isNegative);
+  print(number2.isNegative);
+  print(number3.isNegative);
+  print(number4.isNegative);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">true
+true
+false
+false</code></pre></div></p>
+
+<h4 id="get-absolute-value-of-a-double-variable-using-abs-method">Get absolute value of a double variable using abs() method</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+
+  print(number1.abs());
+  print(number2.abs());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">5.0
+5.0</code></pre></div></p>
+
+<h4 id="how-to-use-ceil-method">How to use ceil() method</h4>
+
+<p>Dart’s double class provides ceil() method to return the least integer no smaller than a given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.ceil());
+  print(number2.ceil());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">6
+6</code></pre></div></p>
+
+<h4 id="how-to-use-ceiltodouble-method">How to use ceilToDouble() method</h4>
+
+<p>Dart’s double class provides ceilToDouble() method to return the least integer double value no smaller than a given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.ceilToDouble());
+  print(number2.ceilToDouble());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">6.0
+6.0</code></pre></div></p>
+
+<h4 id="how-to-use-floor-method">How to use floor() method</h4>
+
+<p>Dart’s double class provides floor() method to return the greatest integer no greater than a given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.floor());
+  print(number2.floor());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">5
+5</code></pre></div></p>
+
+<h4 id="how-to-use-floortodouble-method">How to use floorToDouble() method</h4>
+
+<p>Dart’s double class provides floorToDouble() method to return the greatest integer double value no greater than a given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.floorToDouble());
+  print(number2.floorToDouble());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">5.0
+5.0</code></pre></div></p>
+
+<h4 id="how-to-use-round-method">How to use round() method</h4>
+
+<p>Dart’s double class provides round() method to return the integer value closest to the given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.round());
+  print(number2.round());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">6
+5</code></pre></div></p>
+
+<h4 id="how-to-use-roundtodouble-method">How to use roundToDouble() method</h4>
+
+<p>Dart’s double class provides roundToDouble() method to return the integer double value closest to the given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.roundToDouble());
+  print(number2.roundToDouble());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">6.0
+5.0</code></pre></div></p>
+
+<h4 id="how-to-use-truncate-method">How to use truncate() method</h4>
+
+<p>Dart’s double class provides truncate() method to return the integer obtained by discarding any fractional digits from  the given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.truncate());
+  print(number2.truncate());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">5
+5</code></pre></div></p>
+
+<h4 id="how-to-use-truncatetodouble-method">How to use truncateToDouble() method</h4>
+
+<p>Dart’s double class provides truncateToDouble() method to return the double integer obtained by discarding any fractional digits from  the given double value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.1</span>;
+
+  print(number1.truncateToDouble());
+  print(number2.truncateToDouble());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">5.0
+5.0</code></pre></div></p>
+
+<h4 id="how-to-use-compareto-method">How to use compareTo() method</h4>
+
+<p>The double’s compareTo() method returns a negative number if the value is less than the compare to value, zero if it equals and return positive number if it is greater than the compare to value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5.5</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.5</span>;
+
+  print(number1.compareTo(number2));
+  print(number1.compareTo(<span style="color:#ae81ff">5.5</span>));
+  print(number1.compareTo(<span style="color:#ae81ff">1.0</span>));
+  print((<span style="color:#f92672">-</span><span style="color:#ae81ff">0.0</span>).compareTo(<span style="color:#ae81ff">0.0</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">-1
+0
+1
+-1</code></pre></div></p>
+
+<h4 id="how-to-use-remainder-method">How to use remainder() method</h4>
+
+<p>The double’s remainder() method to return the remainder of the truncating division of 2 double values.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+
+  print(number1.remainder(number2));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">1.0</code></pre></div></p>
+
+<h4 id="convert-double-value-to-integer-value-in-dart">Convert double value to integer value in Dart</h4>
+
+<p>The double’s toInt() method to truncate the double value and return as an integer value.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.5</span>;
+
+  print(number.toInt());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">10</code></pre></div></p>
+
+<h4 id="convert-double-value-to-string-value-in-dart">Convert double value to String value in Dart</h4>
+
+<p>Using <strong>toString()</strong> method
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number <span style="color:#f92672">=</span> <span style="color:#ae81ff">200.123</span>;
+
+  print(number.toString());
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">200.123</code></pre></div></p>
+
+<p>Using <strong>toStringAsExponential()</strong> method
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number <span style="color:#f92672">=</span> <span style="color:#ae81ff">200.123</span>;
+
+  print(number.toStringAsExponential(<span style="color:#ae81ff">1</span>));
+  print(number.toStringAsExponential(<span style="color:#ae81ff">2</span>));
+  print(number.toStringAsExponential(<span style="color:#ae81ff">3</span>));
+  print(number.toStringAsExponential(<span style="color:#ae81ff">4</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2.0e+2
+2.00e+2
+2.001e+2
+2.0012e+2</code></pre></div></p>
+
+<p>Using <strong>toStringAsFixed()</strong> method
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number <span style="color:#f92672">=</span> <span style="color:#ae81ff">200.123</span>;
+
+  print(number.toStringAsFixed(<span style="color:#ae81ff">1</span>));
+  print(number.toStringAsFixed(<span style="color:#ae81ff">2</span>));
+  print(number.toStringAsFixed(<span style="color:#ae81ff">3</span>));
+  print(number.toStringAsFixed(<span style="color:#ae81ff">4</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">200.1
+200.12
+200.123
+200.1230</code></pre></div></p>
+
+<h4 id="parse-a-string-to-a-double-value">Parse a String to a double value</h4>
+
+<p>Using <strong>parse()</strong> static method
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;10.5&#34;</span>);
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;-10.5&#34;</span>);
+  <span style="color:#66d9ef">double</span> number3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;  5.&#34;</span>);
+  <span style="color:#66d9ef">double</span> number4 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;  .5  &#34;</span>);
+  <span style="color:#66d9ef">double</span> number5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;-1.e5&#34;</span>);
+  <span style="color:#66d9ef">double</span> number6 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;1234E+7&#34;</span>);
+  <span style="color:#66d9ef">double</span> number7 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;+.12e-9&#34;</span>);
+  <span style="color:#66d9ef">double</span> number8 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.parse(<span style="color:#e6db74">&#34;-NaN&#34;</span>);
+
+  print(number1);
+  print(number2);
+  print(number3);
+  print(number4);
+  print(number5);
+  print(number6);
+  print(number7);
+  print(number8);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">10.5
+-10.5
+5.0
+0.5
+-100000.0
+12340000000.0
+1.2e-10
+NaN</code></pre></div></p>
+
+<p>Using <strong>tryParse()</strong> static method
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  <span style="color:#66d9ef">double</span> number1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;10.5&#34;</span>);
+  <span style="color:#66d9ef">double</span> number2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;-10.5&#34;</span>);
+  <span style="color:#66d9ef">double</span> number3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;  5.&#34;</span>);
+  <span style="color:#66d9ef">double</span> number4 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;  .5  &#34;</span>);
+  <span style="color:#66d9ef">double</span> number5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;-1.e5&#34;</span>);
+  <span style="color:#66d9ef">double</span> number6 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;1234E+7&#34;</span>);
+  <span style="color:#66d9ef">double</span> number7 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;+.12e-9&#34;</span>);
+  <span style="color:#66d9ef">double</span> number8 <span style="color:#f92672">=</span> <span style="color:#66d9ef">double</span>.tryParse(<span style="color:#e6db74">&#34;-NaN&#34;</span>);
+
+  print(number1);
+  print(number2);
+  print(number3);
+  print(number4);
+  print(number5);
+  print(number6);
+  print(number7);
+  print(number8);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">10.5
+-10.5
+5.0
+0.5
+-100000.0
+12340000000.0
+1.2e-10
+NaN</code></pre></div></p>
+
+<h4 id="the-double-s-constants">The double’s constants</h4>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  print(<span style="color:#66d9ef">double</span>.minPositive);
+
+  print(<span style="color:#66d9ef">double</span>.maxFinite);
+
+  print(<span style="color:#66d9ef">double</span>.infinity);
+
+  print(<span style="color:#66d9ef">double</span>.negativeInfinity);
+
+  print(<span style="color:#66d9ef">double</span>.nan);
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">5e-324
+1.7976931348623157e+308
+Infinity
+-Infinity
+NaN</code></pre></div></p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://mobilecode.dev/dart-int-data-type/">Dart integer Data Type by Examples</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://mobilecode.dev/tag/dart-double">Dart double</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">   
+            <div class="container-fluid">
+                <p class="copyright">Copyright &#xA9; 2019 MobileCode.dev All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://mobilecode.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://mobilecode.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6MNFJLDKNE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6MNFJLDKNE');
+</script>
+</body>
+</html>
