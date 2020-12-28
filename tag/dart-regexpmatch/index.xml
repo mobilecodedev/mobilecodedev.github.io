@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dart Regexpmatch on Mobile Code</title>
+    <link>https://mobilecode.dev/tag/dart-regexpmatch/</link>
+    <description>Recent content in Dart Regexpmatch on Mobile Code</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Dec 2020 22:08:48 +0700</lastBuildDate>
+    
+	<atom:link href="https://mobilecode.dev/tag/dart-regexpmatch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dart RegExp by Examples</title>
+      <link>https://mobilecode.dev/dart-regexp/</link>
+      <pubDate>Mon, 28 Dec 2020 22:08:48 +0700</pubDate>
+      
+      <guid>https://mobilecode.dev/dart-regexp/</guid>
+      <description>In this Dart tutorial, we learn how to use RegExp class to match Strings using regular expressions.
+How to use firstMatch() method In the following example Dart program we use the firstMatch() method to search the first match of the regular expression in the given String. The return RegExpMatch object can be used to get the substring that matches by start and end properties. void main() { RegExp regExp = new RegExp(r&amp;#34;(\w+)&amp;#34;); String sampleString = &amp;#34;Dart programming language tutorials.</description>
+    </item>
+    
+  </channel>
+</rss>

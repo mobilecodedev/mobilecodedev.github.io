@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dart RegExp by Examples</title>
+    <meta name="title" content="Dart RegExp by Examples">
+    <meta name="description" content="In this Dart tutorial, we learn how to use RegExp class to match Strings using regular expressions.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mobilecode.dev/dart-regexp/">
+    <meta property="og:title" content="Dart RegExp by Examples">
+    <meta property="og:description" content="In this Dart tutorial, we learn how to use RegExp class to match Strings using regular expressions.">
+    
+    <meta property="og:image" content="https://mobilecode.dev/images/dart-regexp.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@simple_s_dev">
+    <meta name="twitter:creator" content="@simple_s_dev">
+    <meta name="twitter:url" content="https://mobilecode.dev/dart-regexp/">
+    <meta name="twitter:title" content="Dart RegExp by Examples">
+    <meta name="twitter:description" content="In this Dart tutorial, we learn how to use RegExp class to match Strings using regular expressions.">
+    
+    <meta name="twitter:image" content="https://mobilecode.dev/images/dart-regexp.png">
+    
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://mobilecode.dev/css/all.min.css" />
+    <link rel="stylesheet" href="https://mobilecode.dev/css/style.min.css?version=8" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-expand-lg  navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="https://mobilecode.dev/">
+      <img src="https://mobilecode.dev/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="https://mobilecode.dev//dart">Dart</a></li>
+        </ul>
+      </div>
+</nav><div id="content" class="main-container">
+<section class="section">
+    <div class="main-content container-fluid article-content">
+        <div class="row">
+            <div class="col-lg-8">
+                <article class="post">
+                    <div class="post-header"><h1 class="post-title">Dart RegExp by Examples</h1></div>
+                    <div class="blog-detail-description">
+                        
+
+<p>In this Dart tutorial, we learn how to use RegExp class to match Strings using regular expressions.</p>
+
+<h4 id="how-to-use-firstmatch-method">How to use firstMatch() method</h4>
+
+<p>In the following example Dart program we use the firstMatch() method to search the first match of the regular expression in the given String. The return RegExpMatch object can be used to get the substring that matches by start and end properties.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  RegExp regExp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">r&#34;(\w+)&#34;</span>);
+  <span style="color:#66d9ef">String</span> sampleString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dart programming language tutorials.&#34;</span>;
+  RegExpMatch firstMatch <span style="color:#f92672">=</span> regExp.firstMatch(sampleString);
+  
+  <span style="color:#66d9ef">if</span>(firstMatch <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+    print(<span style="color:#e6db74">&#34;First match substring: </span><span style="color:#e6db74">${</span>sampleString.substring(firstMatch.start, firstMatch.end)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;No matched.&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">First match substring: Dart</code></pre></div></p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  RegExp regExp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">r&#34;(\w+)&#34;</span>);
+  <span style="color:#66d9ef">String</span> sampleString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;!@#%^&amp;*()&#34;</span>;
+  RegExpMatch firstMatch <span style="color:#f92672">=</span> regExp.firstMatch(sampleString);
+  
+  <span style="color:#66d9ef">if</span>(firstMatch <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+    print(<span style="color:#e6db74">&#34;First match substring: </span><span style="color:#e6db74">${</span>sampleString.substring(firstMatch.start, firstMatch.end)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>);
+  } <span style="color:#66d9ef">else</span> {
+    print(<span style="color:#e6db74">&#34;No matched.&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">No matched.</code></pre></div></p>
+
+<h4 id="how-to-use-hasmatch-method">How to use hasMatch() method</h4>
+
+<p>The hasMatch() method to return whether the regular expression has matched in a given String or not.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  RegExp regExp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">r&#34;(\w+)&#34;</span>);
+  <span style="color:#66d9ef">String</span> sampleString1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobilecode.dev&#34;</span>;
+  <span style="color:#66d9ef">String</span> sampleString2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%^&amp;**&#34;</span>;
+
+  <span style="color:#66d9ef">bool</span> hasMatch1 <span style="color:#f92672">=</span> regExp.hasMatch(sampleString1);
+  <span style="color:#66d9ef">bool</span> hasMatch2 <span style="color:#f92672">=</span> regExp.hasMatch(sampleString2);
+  
+  print(<span style="color:#e6db74">&#34;Has match </span><span style="color:#e6db74">${</span>sampleString1<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${</span>hasMatch1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> );
+  print(<span style="color:#e6db74">&#34;Has match </span><span style="color:#e6db74">${</span>sampleString2<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${</span>hasMatch2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> );
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Has match mobilecode.dev: true
+Has match %^&amp;**: false</code></pre></div></p>
+
+<h4 id="how-to-use-matchasprefix-method">How to use matchAsPrefix() method</h4>
+
+<p>The matchAsPrefix() method to search the match of the regular expression from in the String from a given index.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  RegExp regExp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">r&#34;(\w+)&#34;</span>);
+  <span style="color:#66d9ef">String</span> sampleString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobile code&#34;</span>;
+  Match match <span style="color:#f92672">=</span> regExp.matchAsPrefix(sampleString, <span style="color:#ae81ff">7</span>);
+
+  <span style="color:#66d9ef">if</span>(match <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+    print(<span style="color:#e6db74">&#34;Match substring: </span><span style="color:#e6db74">${</span>sampleString.substring(match.start, match.end)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> );
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Match substring: code</code></pre></div></p>
+
+<h4 id="how-to-use-stringmatch-method">How to use stringMatch() method</h4>
+
+<p>The stringMatch() method returns the first substring result that matches the regular expression.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  RegExp regExp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">r&#34;(\w+)&#34;</span>);
+  <span style="color:#66d9ef">String</span> sampleString1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobile code&#34;</span>;
+  <span style="color:#66d9ef">String</span> sampleString2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;^&amp;**()&#34;</span>;
+  <span style="color:#66d9ef">String</span> matchString1 <span style="color:#f92672">=</span> regExp.stringMatch(sampleString1);
+  <span style="color:#66d9ef">String</span> matchString2 <span style="color:#f92672">=</span> regExp.stringMatch(sampleString2);
+  
+  print(<span style="color:#e6db74">&#34;Match of </span><span style="color:#e6db74">${</span>sampleString1<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${</span>matchString1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> );
+  print(<span style="color:#e6db74">&#34;Match of </span><span style="color:#e6db74">${</span>sampleString2<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${</span>matchString2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> );
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Match of mobile code: mobile
+Match of ^&amp;**(): null</code></pre></div></p>
+
+<h4 id="how-to-use-allmatches-method">How to use allMatches() method</h4>
+
+<p>The allMatches() method to return a list of matches results of the regular expression.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  RegExp regExp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RegExp(<span style="color:#e6db74">r&#34;(\w+)&#34;</span>);
+  <span style="color:#66d9ef">String</span> sampleString <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;mobile code website&#34;</span>;
+  Iterable<span style="color:#f92672">&lt;</span>RegExpMatch<span style="color:#f92672">&gt;</span> matches <span style="color:#f92672">=</span> regExp.allMatches(sampleString);
+  
+  <span style="color:#66d9ef">for</span>(RegExpMatch match <span style="color:#66d9ef">in</span> matches) {
+    print(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>sampleString.substring(match.start, match.end)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>);
+  }
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">mobile
+code
+website</code></pre></div></p>
+
+<h4 id="how-to-use-escape-static-method">How to use escape() static method</h4>
+
+<p>The escape() static method can be used to escape the special characters that have special meaning in a regular expression from a specified String.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main() {
+  print(RegExp.escape(<span style="color:#e6db74">&#34;test@mobilecode.dev&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">&#34;(sample*)&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">&#34;[test]&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">&#34;{sample}&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">&#34;1+1&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">&#34;?&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">&#34;^&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">&#34;|&#34;</span>));
+  print(RegExp.escape(<span style="color:#e6db74">r&#34;\&#34;</span>));
+}</code></pre></div>
+The output is:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">test@mobilecode\.dev
+\(sample\*\)
+\[test\]
+\{sample\}
+1\+1
+\?
+\^
+\|
+\\</code></pre></div></p>
+
+<p>Happy Coding 😊</p>
+
+<h5 id="related-articles">Related Articles</h5>
+
+<p><a href="https://mobilecode.dev/dart-stringbuffer/">Dart StringBuffer by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-string-data-type/">Dart String Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-int-data-type/">Dart integer Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-double-data-type/">Dart double Data Type by Examples</a></p>
+
+<p><a href="https://mobilecode.dev/dart-bool-data-type/">Dart bool Data Type by Examples</a></p>
+
+                        
+                        <div class="mt-5">
+                            <h6>Tags:</h6>
+                            <div class="tagcloud">
+                                <a href="https://mobilecode.dev/tag/dart-regexp">Dart RegExp</a>
+                                
+                                <a href="https://mobilecode.dev/tag/dart-regexpmatch">Dart RegExpMatch</a>
+                                
+                                <a href="https://mobilecode.dev/tag/dart-match">Dart Match</a>
+                                
+                                <a href="https://mobilecode.dev/tag/dart-string">Dart String</a>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div><footer>
+        <div class="copy-wrapper">   
+            <div class="container-fluid">
+                <p class="copyright">Copyright &#xA9; 2019 MobileCode.dev All Rights Reserved.</p>
+            </div>
+        </div>
+</footer>
+<script src="https://mobilecode.dev/js/jquery-3.3.1.min.js"></script>
+<script src="https://mobilecode.dev/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6MNFJLDKNE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6MNFJLDKNE');
+</script>
+</body>
+</html>
